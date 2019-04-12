@@ -14,6 +14,16 @@ export default new Router({
       component: Home
     },
     {
+      path: '/pie',
+      name: 'pie',
+      component: () => import(/* webpackChunkName: "about" */ './components/Pie.vue')
+    },
+    {
+      path: '/bar',
+      name: 'bar',
+      component: () => import(/* webpackChunkName: "about" */ './components/Bar.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
