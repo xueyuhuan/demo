@@ -5,7 +5,7 @@ import Home from './views/Home.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
@@ -22,6 +22,21 @@ export default new Router({
       path: '/bar',
       name: 'bar',
       component: () => import(/* webpackChunkName: "about" */ './components/Bar.vue')
+    },
+    {
+      path: '/line',
+      name: 'line',
+      component: () => import(/* webpackChunkName: "about" */ './components/LineChart.vue')
+    },
+    {
+      path: '/gauge',
+      name: 'gauge',
+      component: () => import(/* webpackChunkName: "about" */ './components/Gauge.vue')
+    },
+    {
+      path: '/gaugeLine',
+      name: 'gaugeLine',
+      component: () => import(/* webpackChunkName: "about" */ './components/GaugeLine.vue')
     },
     {
       path: '/about',

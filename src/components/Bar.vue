@@ -10,7 +10,7 @@
         name: "Bar",
         data () {
             return {
-                valueLeft:[68,78,88,98],
+                valueLeft:[68,78,88,1000],
                 valueRight:[43,54,23,16],
             }
         },

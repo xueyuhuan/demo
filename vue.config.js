@@ -1,13 +1,13 @@
 const target='http://192.168.0.184:8085';
 module.exports = {
   // 基本路径
-  baseUrl: './',
+  publicPath: './',
   // 输出文件目录
   outputDir: 'docs',
   css:{
     loaderOptions:{
       sass:{
-        data:`@import "@/assets/scss/_mixin.scss";`
+        data:`@import "@/assets/scss/all.scss";`
       }
     }
   },
