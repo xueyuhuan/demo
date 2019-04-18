@@ -6,7 +6,7 @@ Vue.use(Router)
 
 export default new Router({
   // mode: 'history',
-  base: process.env.BASE_URL,
+  // base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
@@ -37,6 +37,16 @@ export default new Router({
       path: '/gaugeLine',
       name: 'gaugeLine',
       component: () => import(/* webpackChunkName: "about" */ './components/GaugeLine.vue')
+    },
+    {
+      path: '/funnel',
+      name: 'funnel',
+      component: () => import(/* webpackChunkName: "about" */ './components/Funnel.vue')
+    },
+    {
+      path: '/map',
+      name: 'map',
+      component: () => import(/* webpackChunkName: "about" */ './components/Map.vue')
     },
     {
       path: '/about',
